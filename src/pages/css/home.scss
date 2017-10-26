@@ -1,0 +1,37 @@
+.cardPackageContent{
+  .cardInforLists{
+    background:#fff;padding:20px;margin-bottom:10px;display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-webkit-align-items: center;align-items: center;
+    .businessImg{width:25%;height:auto;border-radius: 6px;}
+    .businessDetailInfor{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;margin-left:15px;overflow: hidden;
+      .businessName{color:#131212;font-size:1.8rem;font-weight:bold;}
+      .businessPrice{color:#588ac9;font-size:1.8rem;line-height:35px;}
+      .businessAddress{color:#9c9c9c;font-size:1.4rem;
+        ion-icon{font-size:1.8em;color:#e7e8e8;margin-right:5px;vertical-align: middle;}
+      }
+    }
+  }
+  .cardInforLists:active{background:#dbebfe;
+    .businessAddress{color:#444445 !important;
+      ion-icon{color:#4b4a4a !important;}
+    }
+  }
+  .setSelectCard{background:#dbebfe;
+    .businessAddress{color:#444445 !important;
+      ion-icon{color:#4b4a4a !important;}
+    }
+  }
+}
+
+.cardInforHeaderBox{padding:20px 40px;background: #f4f6f9;
+  img{width:25%;height:auto;margin-right:15px;}
+  .cardName{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;color: #131212; font-size: 1.8rem; font-weight: bold;}
+}
+
+/*激活卡*/
+.activationCardInfor{text-align: center;font-size:1.6rem;color:#6fa3e5;padding:20px 0;
+  p{margin:5px;}
+  .amountMoney{font-size:3.5rem;font-weight:bold;color: #588ac9;}
+}
+.activationCardBtn{padding:35px 25px;
+  button.disable{background: #e5e5e5;}
+}

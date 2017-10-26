@@ -1,0 +1,48 @@
+<!--
+  Generated template for the StoreDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>库胖店详情</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="couponStoreDetaill">
+  <div class="couponStoreHeaderBox displayFlex-center">
+    <img src="assets/img/home/businessImg.png">
+    <div class="cardInforBox">
+      <div class="storeName ellipsis1">Hair Art造型沙龙（新天地店）</div>
+      <div class="storeAddress ellipsis1">上海市黄浦区马当路261号附近</div>
+    </div>
+  </div>
+  <div class="couponCardOption displayFlex-center">
+      <div class="cardOptionBox" (click)="goChargeCard()">
+        <img src="assets/img/openPayCard.png">
+        <p>开卡/充值</p>
+      </div>
+      <div class="cardOptionBox" (click)="goConsume()">
+        <img src="assets/img/consumeIcon.png">
+        <p>消费</p>
+      </div>
+  </div>
+  <div style="height:15px;width:100%;background: #f5f5f5;"></div>
+  <div class="couponStoreOtherInfor">
+      <div class="storeImgShow displayFlex-center">
+        <span><img src="assets/img/home/businessImg.png"></span>
+        <span><img src="assets/img/home/businessImg.png"></span>
+        <span><img src="assets/img/home/businessImg.png"></span>
+      </div>
+      <div class="couponStoreIntroduce">
+          <div class="title">店家详情：</div>
+          <div class="content">这是一家很好的店铺，享受一下终身值得拥有。</div>
+      </div>
+  </div>
+</div>
+</ion-content>

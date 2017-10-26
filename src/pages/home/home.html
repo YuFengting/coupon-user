@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>首页</ion-title>
+    <ion-buttons end>
+      <button ion-button tappable (click)="goLoginPage()" >登录</button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="homePageContent">
+      <div class="cardPackpageBox"><img src="assets/img/home/cardBox.png" tappable (click)="goCardBox()" ></div>
+      <div class="paymentScanBox">
+          <div class="imgBox">
+            <img src="assets/img/home/paymentIcon.png">
+            <p>付款码</p>
+          </div>
+          <div class="imgBox" tappable (click)="activationCcard()">
+            <img src="assets/img/home/scanIcon.png">
+            <p>扫一扫</p>
+          </div>
+      </div>
+      <div class="meFeastBox"><img src="assets/img/home/feastImg.png" tappable (click)="goMyTreat()"></div>
+  </div>
+</ion-content>

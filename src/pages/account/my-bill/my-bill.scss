@@ -1,0 +1,43 @@
+page-my-bill {
+  .allPaymentMoney{padding:10px;width:100%;text-align: center;position: relative;font-size:1.4rem;color:#585959;
+      .number{font-size:2.5rem;color: #111111;font-weight: bold;  margin: 5px 0;}
+      .selectCalendar{position: absolute;bottom:18px;right:40px;
+        .ion-ios-calendar:before{content:'';width:25px;height:26px;background: url(../assets/img/account/calendarIcon.png) no-repeat;background-size:100% 100%;}
+        ion-datetime{width: 25px;height: 26px;position: absolute;left: 0px;top: 0px;text-indent: -999999999999em;}
+      }
+  }
+  .billTimeTabs{padding:0 30px;
+    span{text-align: center;display: inline-block;width: 15%;margin:0 5%;padding-bottom: 5px;}
+    span.current{border-bottom:2px solid #588ac9;color:#588ac9;}
+  }
+  .billTypeTabs{padding:10px 0;border-bottom:1px solid #f3f3f3;font-size:1.6rem;color: #c3c3c3;
+    .tabBox{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;text-align: center;
+      .ion-ios-allBill:before{content:'';width:38px;height:38px;background: url(../assets/img/account/allBill.png) no-repeat;background-size:100% 100%;}
+      .ion-ios-allPayment:before{content:'';width:38px;height:38px;background: url(../assets/img/account/allPayment.png) no-repeat;background-size:100% 100%;}
+      .ion-ios-allConsume:before{content:'';width:38px;height:38px;background: url(../assets/img/account/allConsume.png) no-repeat;background-size:100% 100%;}
+      p{margin:2px 0 0;}
+    }
+    .tabBox.current{color:#588ac9;
+      .ion-ios-allBill:before{background: url(../assets/img/account/allBill_cur.png) no-repeat;background-size:100% 100%;}
+      .ion-ios-allPayment:before{background: url(../assets/img/account/allPayment_cur.png) no-repeat;background-size:100% 100%;}
+      .ion-ios-allConsume:before{background: url(../assets/img/account/allConsume_cur.png) no-repeat;background-size:100% 100%;}
+    }
+  }
+  .myBillDetailInfor{color:#131212;font-size:1.6rem;
+    .billMonthBox{height:40px;line-height: 40px;padding-left:15px;font-size:1.8rem;color:#111111;background: #ececed;}
+    .billListInfor{padding:20px 10px;border-bottom: 1px solid #dfdede;
+      .billDatebox{text-align: center;padding-right: 10px;border-right:1px solid #dfdede;
+        h2{margin-bottom: 5px;}
+        p{margin:0px;}
+      }
+      .billBusinessImg{width:20%;height:auto;padding: 0px 10px 0px 10px;}
+      .billBusinessInfor{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;overflow: hidden;padding-right: 5px;
+        p{margin:0px;
+          .number{color:#588ac9;}
+          &.accountNum{margin-top:5px;}
+        }
+      }
+    }
+  }
+
+}

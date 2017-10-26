@@ -1,0 +1,42 @@
+<!--
+  Generated template for the StandTreatPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我请客</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="standTreatContent">
+    <div class="cardInforHeaderBox displayFlex-center">
+      <img src="assets/img/home/businessImg.png">
+      <div class="cardName ellipsis2">董小姐理发馆库胖卡</div>
+    </div>
+    <div class="standTreatForYou">
+      <div class="selectTreatpeople" [class.noPeople]="setNoPeople">
+        <span>{{peopleInfor}}</span>
+        <ion-icon name="ios-address-list" tappable (click)="goAddressList()"></ion-icon>
+      </div>
+      <div class="setStandTreatTime">
+        <!--<div class="selectTime"><ion-icon [name]="setSelectIcon" (click)="changeSelected()"></ion-icon><span>请客一天</span></div>-->
+        <div class="selectTime"><input id="oneday"  name="treatTime" type="radio" hidden checked tappable (change)="setDateStyle($event)" /><label for="oneday"></label><span>请客一天</span></div>
+        <div class="selectTime"><input id="allday"  name="treatTime" type="radio" hidden tappable (change)="setDateStyle($event)" /><label for="allday"></label><span>一直请客</span></div>
+        <div class="selectTime displayFlex-top"><input id="settime" name="treatTime"  type="radio" hidden tappable (change)="setDateStyle($event)" /><label for="settime"></label><span>自定义</span>
+          <div class="selectDate" [class.disabled]="setDateDisabled">
+            <div class="dateBox">从<ion-icon name="ios-dateIcon"></ion-icon><ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="event.timeStarts" doneText="确定" cancelText="取消"></ion-datetime></div>
+            <div class="dateBox">从<ion-icon name="ios-dateIcon"></ion-icon><ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="event.timeEnds" doneText="确定" cancelText="取消"></ion-datetime></div>
+          </div>
+        </div>
+      </div>
+      <button class="standTreatSureBtn" ion-button full round tappable (click)="goEntertainSuccess()" >确认请客</button>
+    </div>
+
+  </div>
+</ion-content>

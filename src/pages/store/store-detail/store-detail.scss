@@ -1,0 +1,26 @@
+page-store-detail {
+  .couponStoreHeaderBox{padding:20px 25px;background: #f4f6f9;
+    img{margin-right: 10px;width:20%;height:auto;}
+    .cardInforBox{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;overflow: hidden;
+        .storeName{color:#363738;font-size: 1.7rem;}
+        .storeAddress{color: #797a7c;font-size: 1.5rem;margin-top: 6px;}
+    }
+  }
+  .couponCardOption{padding:20px 10px;background: #fff;
+    .cardOptionBox{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;text-align: center;font-size:1.6rem;
+      img{width:55%;height: auto;}
+    }
+    .cardOptionBox:nth-child(1){border-right:1px solid #f0eff5;}
+  }
+  .couponStoreOtherInfor{margin-top:15px;background: #fff;
+    .storeImgShow{padding:20px 10px;border-bottom:1px solid #f5f5f5;
+      span{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;margin:0 5px;
+        img{width:100%;height:auto;}
+      }
+    }
+    .couponStoreIntroduce{padding:25px 20px;
+      .title{font-size:1.8rem;font-weight: bold;}
+      .content{font-size: 1.6rem;color:#373839;margin-top: 10px;}
+    }
+  }
+}

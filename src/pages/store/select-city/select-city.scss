@@ -1,0 +1,22 @@
+page-select-city {
+  .searchCityBox{background: #efeeee;padding:10px 20px;
+    input{border-radius: 6px;border:0 none;padding:10px 10px 10px 40px;font-size: 1.6rem;background: url(../assets/img/searchIcon.png) no-repeat 12px center #fff; background-size: 20px 20px;width:100%;}
+  }
+  .selectCurrentCity{background: #f8f8f8;padding:10px 20px;color: #c5c5c5;font-size:1.4rem;
+    span{display: inline-block;border:1px solid #e9e9e9;border-radius: 6px;background: #fff;padding:10px;color:#333333;font-size:1.8rem;margin-top: 12px;min-width: 100px;  text-align: center;}
+  }
+  .cityAllCountyBox{padding:15px 10px;
+    span{display: inline-block;border:1px solid #e9e9e9;border-radius: 6px;background: #f8f8f8;padding:10px;color:#333333;font-size:1.6rem;min-width: 29%;margin:0 2% 20px;text-align: center;}
+    span.current{background: #ececec;}
+  }
+  .allCityShowBox{position: relative;
+    .letterTitle{padding:0 20px;border-top:1px solid #efeeee;background: #f8f8f8;font-size:1.6rem;font-weight: bold;height:40px;line-height: 40px;}
+    .currentLetterCity{padding-left:20px;
+      span{border-bottom:1px solid #efeeee;font-size:1.6rem;height:60px;line-height: 60px;display: block;}
+      span:last-child{border-bottom:0 none;}
+    }
+  }
+  .allLetterBox{position: fixed;top:125px;right:20px;
+    span{display: block;font-size:1.4rem;text-align: center;}
+  }
+}

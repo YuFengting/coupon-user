@@ -1,0 +1,28 @@
+<!--
+  Generated template for the TransferCardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>转卡</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="transferCardContent">
+    <div class="cardInforHeaderBox displayFlex-center">
+      <img src="assets/img/home/businessImg.png">
+      <div class="cardName ellipsis2">董小姐理发馆库胖卡</div>
+    </div>
+    <div class="setTransferCardInfor">
+      <div class="transferListBox"><input type="tel" class="transferInput" placeholder="请输入转卡人的手机号" [(ngModel)]="user.tel" (change)="telChange()" (focus)="showtelClear()" (blur)="hidetelClear()" /><ion-icon name="ios-close-circle" (click)="clearTel()" *ngIf="showtelclear"></ion-icon></div>
+      <div class="transferListBox"><input type="number" class="transferInput" placeholder="请输入验证码" [(ngModel)]="user.code" (change)="codeChange()"  (focus)="showcodeClear()" (blur)="hidecodeClear()"  /><ion-icon name="ios-close-circle" (click)="clearCode()" *ngIf="showcodeclear"></ion-icon><span class="getCodeBox" [ngClass]="{'codeStyleBtn':haveTelVal}" *ngIf="showCodeOrTime" (click)="codeOrTimeDisplay()" >获取验证码</span><span *ngIf="!showCodeOrTime" class="countTime">{{coutTime}}s</span></div>
+      <button class="commonSureBtn sureTransferBtn" ion-button full round  [ngClass]="{'transferSubmitBtn':canGoSubmit}">确认转卡</button>
+    </div>
+  </div>
+</ion-content>

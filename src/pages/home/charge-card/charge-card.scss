@@ -1,0 +1,23 @@
+page-charge-card {
+  .accountBalance{height:70px;line-height:70px;font-size: 3rem;font-weight: bold;color:#588ac9;text-align: center;border-bottom:1px solid #efefef;}
+  .chargeMoneyBox{padding:15px;border-bottom:1px solid #efefef;
+    .title{font-size:1.8rem;padding-left: 5px;}
+    .moneyNumBox span{display: inline-block;color:#588ac9;font-size:1.8rem;height:50px;line-height: 50px;text-align: center;border-radius: 4px;border:1px solid #588ac9;width:22%;margin:10px 1.5% 0;}
+    .moneyNumBox span.current{color:#fff;background: #588ac9;}
+  }
+  @media screen and (max-width: 320px) {
+    .moneyNumBox span{font-size: 1.4rem !important;}
+  }
+  .chargeSelectWays{
+    .paymentWay{padding:20px 25px;width: 95%;
+      img{width:46px;height:46px;margin-right:20px;}
+      span{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;}
+      label{width:26px;height:26px;display: inline-block;background: url(../assets/img/home/selectTrue.png) no-repeat;background-size:100% 100%;}
+      #alipay:checked+label{background: url(../assets/img/home/selectedTrue.png) no-repeat;background-size:100% 100%;}
+      #wxpay:checked+label{background: url(../assets/img/home/selectedTrue.png) no-repeat;background-size:100% 100%;}
+    }
+    .paymentWay:nth-child(1){border-bottom:1px solid #efefef;}
+  }
+  .sureChargeCardBtn{padding:0 25px 25px;}
+
+}

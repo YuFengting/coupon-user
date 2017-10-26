@@ -1,0 +1,33 @@
+<!--
+  Generated template for the ConsumePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>向商家付款</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="consumeForBusiness">
+  <div class="couponStoreHeaderBox displayFlex-center">
+    <img src="assets/img/home/businessImg.png">
+    <div class="cardInforBox">
+      <div class="storeName ellipsis1">Hair Art造型沙龙（新天地店）</div>
+      <div class="storeAddress ellipsis1">上海市黄浦区马当路261号附近</div>
+    </div>
+  </div>
+  <div class="paymentNumberBox">
+      <span>金  额</span>
+      <input type="text" placeholder="请输入金额" />
+  </div>
+  <div class="surePaymentBtn">
+    <button class="commonSureBtn" ion-button full round tappable (click)="goPaymentResult()" >确定付款</button>
+  </div>
+</div>
+</ion-content>

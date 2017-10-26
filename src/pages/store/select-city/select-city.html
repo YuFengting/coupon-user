@@ -1,0 +1,44 @@
+<!--
+  Generated template for the SelectCityPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>库胖店</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding (drag)="contentScroll()">
+<div class="selectCityContent" (scroll)="contentScroll()" (drag)="contentScroll()">
+  <div class="searchCityBox">
+    <input type="text" placeholder="输入城市名、拼音或首字母查询" />
+  </div>
+  <div class="selectCurrentCity">
+    <div>当前</div>
+    <span>上海</span>
+  </div>
+  <div class="cityAllCountyBox">
+    <span  *ngFor="let item of countyName,let i = index" tappable (click)="selectCounty($event,i)" [class.current]="item.current">{{item.name}}</span>
+  </div>
+  <div class="selectCurrentCity">
+    <div>定位</div>
+    <span>上海</span>
+  </div>
+  <div class="allCityShowBox" id="allCityShowBox">
+      <div class="cityLists" *ngFor="let item of cityLists">
+        <div class="letterTitle" id="cityFirstLetter_{{item.letter}}">{{item.letter}}</div>
+        <div class="currentLetterCity">
+          <span *ngFor="let city of item.city" (click)="selectCity($event)">{{city}}</span>
+        </div>
+      </div>
+  </div>
+  <div class="allLetterBox" *ngIf="setLetterDisplay">
+    <span *ngFor="let item of number" (click)="toNumber($event)" (drag)="toNumber($event)">{{item}}</span>
+  </div>
+</div>
+</ion-content>

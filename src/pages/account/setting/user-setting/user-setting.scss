@@ -1,0 +1,17 @@
+page-user-setting {
+.userSettingLists{
+  .settingList{min-height:65px;border-bottom: 1px solid #f5f5f5;font-size:1.6rem;padding:0 15px;
+    .userHeaderImg{width:80px;height:80px;border-radius: 50%;background: #e0e1e1;overflow: hidden;margin:15px 15px 15px 0;}
+    label{color:#7c7c7c;width:76px;display: inline-block;text-align: left;}
+    input{padding:10px 10px 10px 0;border:0 none;font-size:1.6rem;}
+    .setTxt{-webkit-box-flex: 1;-webkit-flex: 1;flex:1;color:#101010;position: relative;
+      .selectValue{position: absolute;line-height: 43px;}
+      .noSelectTips{color:#c6c6c6;}
+      ion-datetime{text-indent:-99999em;}
+      ion-select{max-width: 100%;padding:11px 8px 11px 0px;text-indent:-99999em;}
+    }
+    .setTxt.noSelect{color:#c6c6c6;}
+    .ion-ios-arrow-forward{font-size:1.5em;color:#7c7c7c;}
+  }
+}
+}

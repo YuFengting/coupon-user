@@ -1,0 +1,31 @@
+<!--
+  Generated template for the StorePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>选店购卡</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="selectStoreBuyCard">
+  <div class="selectCityBox displayFlex-center">
+      <span class="cityNamne" tappable (click)="goSelectCity()">上海市<ion-icon name="ios-arrow-down-outline"></ion-icon></span>
+      <input type="text" placeholder="输入店铺名称或地址" class="searchInput" />
+      <span>搜索</span>
+  </div>
+  <div class="storeListsBox displayFlex-center" *ngFor="let item of storeInfor;let i = index" tappable (click)="goStoreDetail(i)">
+      <img [src]="item.img">
+      <div class="storeInforBox">
+        <div class="storeName ellipsis1">{{item.name}}</div>
+        <div class="storeAddress ellipsis2"><ion-icon name="md-pin"></ion-icon>{{item.address}}</div>
+      </div>
+  </div>
+</div>
+</ion-content>

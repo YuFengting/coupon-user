@@ -1,0 +1,15 @@
+page-recharge-instruction {
+.rechargeIntrContent{
+  padding:15px;
+  .headerBox{color:#5f96dc;font-size:2rem;
+    img{vertical-align: middle;margin-right: 5px;width:45px;height:45px;}
+    p{font-size:1.4rem;margin:5px;}
+  }
+  .titleBox{width:90%;height:36px;line-height: 36px;text-align: center;font-size:1.6rem;color:#fff;background: url(../assets/img/account/titleBg.png) no-repeat;background-size:100% 100%;margin:30px auto;}
+  .subTitleBox{padding:20px 0 5px 25px;color:#426ca1;font-size:3rem; margin:30px 0 0 10px;}
+  .oneTitleBg{background: url(../assets/img/account/oneTitle.png) no-repeat left center;background-size: 60px 43px;}
+  .twoTitleBg{background: url(../assets/img/account/twoTitle.png) no-repeat left center;background-size: 59px 43px;}
+  .threeTitleBg{background: url(../assets/img/account/threeTitle.png) no-repeat left center;background-size:86px 43px;}
+  p{font-size:1.6rem;color:#588ac9;line-height: 25px;}
+}
+}

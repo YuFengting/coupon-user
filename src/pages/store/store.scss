@@ -1,0 +1,27 @@
+page-store {
+  .selectStoreBuyCard{
+    .selectCityBox{padding:10px 20px;border-bottom:1px solid #f1f1f1;
+      .cityNamne ion-icon{margin-left: 5px;}
+    }
+    @media screen and (max-width: 320px) {
+      .selectCityBox{padding:10px;}
+    }
+    .searchInput{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;margin:0 10px;height:38px;line-height:28px;padding:5px 10px 5px 35px;border:1px solid #f1f1f1;border-radius: 19px;background: url(../assets/img/searchIcon.png) no-repeat 12px center;background-size: 20px 20px;}
+    @media screen and (max-width: 320px) {
+      .searchInput{margin:0 5px;}
+    }
+    .storeListsBox{padding:20px 20px 20px 30px;border-bottom:1px solid #f1f1f1;
+      img{margin-right: 15px;width:20%;height:auto;border-radius: 50%;overflow: hidden;}
+      .storeInforBox{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;overflow: hidden;
+          .storeName{font-size:1.8rem;color:#333333;line-height: 35px;}
+          .storeAddress{font-size:1.5rem;color:#626262;
+            ion-icon{vertical-align: middle;margin-right:8px;font-size: 1.4em;}
+          }
+      }
+    }
+    @media screen and (max-width: 320px) {
+      .storeListsBox{padding:20px 15px;}
+    }
+
+  }
+}

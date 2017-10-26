@@ -1,0 +1,47 @@
+<!--
+  Generated template for the ChargeCardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>充卡</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="chargeCardContent">
+    <div class="cardInforHeaderBox displayFlex-center">
+      <img src="assets/img/home/businessImg.png">
+      <div class="cardName ellipsis2">董小姐理发馆库胖卡</div>
+    </div>
+    <div class="accountBalance">￥ 20000</div>
+    <div class="chargeMoneyBox">
+      <div class="title">充值金额</div>
+      <div class="moneyNumBox">
+        <span  *ngFor="let item of money" [class.current]="item.setCurrent" tappable (click)="setCurrentNum(item)">{{item.num}}</span>
+      </div>
+    </div>
+    <div class="chargeSelectWays">
+      <div class="paymentWay displayFlex-center">
+        <img src="assets/img/home/alipay.png">
+        <span>支付宝支付</span>
+        <input id="alipay" type="radio" name="selectPay" checked hidden >
+        <label for="alipay"></label>
+      </div>
+      <div class="paymentWay displayFlex-center">
+        <img src="assets/img/home/weixin.png">
+        <span>微信支付</span>
+        <input id="wxpay" type="radio" name="selectPay"  hidden >
+        <label for="wxpay"></label>
+      </div>
+      <div class="sureChargeCardBtn">
+        <button class="commonSureBtn" ion-button full round tappable (click)="goPaymentResult()" >确定充值</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

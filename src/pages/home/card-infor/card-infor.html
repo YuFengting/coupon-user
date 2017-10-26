@@ -1,0 +1,36 @@
+<!--
+  Generated template for the CardInforPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>卡信息</ion-title>
+    <ion-buttons end>
+      <ion-icon name="ios-card-bill"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="cardInforContent">
+  <div class="cardInforHeaderBox displayFlex-center">
+    <img src="assets/img/home/businessImg.png">
+    <div class="cardName ellipsis2">董小姐理发馆库胖卡</div>
+  </div>
+  <div class="businessCodeBox">
+      <img class="codeImg" src="assets/img/home/businessCode.png">
+      <div class="codeTipsBox"><ion-icon name="ios-tips"></ion-icon>该条码用于商家扫码</div>
+  </div>
+  <div class="cardOtherFunBox">
+    <span class="orangeColor" tappable (click)="setMyTreat()">{{setTreatFlag}}</span>
+    <span class="greenColor" tappable (click)="goChargCard()">充  值</span>
+    <span class="buleColor">扫码支付</span>
+    <span class="buleColor" tappable (click)="goTransferCard()">转  卡</span>
+  </div>
+</div>
+</ion-content>

@@ -1,0 +1,18 @@
+page-card-infor {
+ .ion-ios-card-bill{color:#fff;padding-right:10px;}
+  .ion-ios-card-bill:before{content:'';width:30px;height:30px;background: url(../assets/img/home/billIcon.png) no-repeat;background-size:100% 100%;}
+  .cardInforContent{
+    .businessCodeBox{text-align: center;
+      .codeImg{width:60%;height:auto;padding:40px 0 20px;}
+      .codeTipsBox{text-align: center;font-size: 1.4rem;color:#3266a2;}
+      .ion-ios-tips{vertical-align: middle;margin-right:5px;}
+      .ion-ios-tips:before{content:'';width:15px;height:15px;background: url(../assets/img/home/tipsIcon.png) no-repeat;background-size:100% 100%;}
+    }
+    .cardOtherFunBox{padding:0 20px;}
+    .cardOtherFunBox span{display: inline-block;width:45%;margin:15px 2% 0;border-radius: 4px;height:50px;line-height:50px;text-align: center;color:#fff;font-size:1.8rem;
+      &.orangeColor{background: #e29171;}
+      &.greenColor{background: #68c958;}
+      &.buleColor{background: #588ac9;}
+    }
+  }
+}
