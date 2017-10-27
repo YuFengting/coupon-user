@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ViewController,App } from 'ionic-angular';
 
-import { EntertainSuccessPage } from '../entertain-success/entertain-success';
-
 /**
  * Generated class for the StandTreatPage page.
  *
@@ -51,7 +49,7 @@ export class StandTreatPage {
   }
 
   goEntertainSuccess(){
-    this.app.getRootNav().push(EntertainSuccessPage);
+    this.app.getRootNav().push('EntertainSuccessPage');
   }
 
 

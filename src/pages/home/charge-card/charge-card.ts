@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ViewController,App } from 'ionic-angular';
 
-import { PayFailPage } from '../pay-fail/pay-fail';
-
 /**
  * Generated class for the ChargeCardPage page.
  *
@@ -72,8 +70,8 @@ export class ChargeCardPage {
   }
 
   goPaymentResult(){
-    // this.app.getRootNav().push(PaySuccessPage);
-    this.app.getRootNav().push(PayFailPage);
+    // this.app.getRootNav().push('PaySuccessPage');
+    this.app.getRootNav().push('PayFailPage');
   }
 
 }

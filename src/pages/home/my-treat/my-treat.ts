@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ViewController,App } from 'ionic-angular';
 
-import { StandTreatPage } from '../my-treat/stand-treat/stand-treat';
-
 /**
  * Generated class for the MyTreatPage page.
  *
@@ -58,7 +56,7 @@ export class MyTreatPage {
     //   this.cardInfor[i].currentCard = false;
     // };
     // item.currentCard = true;
-    this.app.getRootNav().push(StandTreatPage);
+    this.app.getRootNav().push('StandTreatPage');
   }
 
 }

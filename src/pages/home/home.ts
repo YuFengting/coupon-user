@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController,NavParams } from 'ionic-angular';
+import { IonicPage,NavController,NavParams } from 'ionic-angular';
 import {App} from 'ionic-angular';
 
-import { LoginPage } from '../login/login';
-import { CardPackagePage } from '../home/card-package/card-package';
-import { MyTreatPage } from '../home/my-treat/my-treat';
-import { ActivationCardNologinPage } from '../activation-card-nologin/activation-card-nologin';
-
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -18,21 +14,21 @@ export class HomePage {
   }
 
   goLoginPage(){
-    this.app.getRootNav().push(LoginPage)
-    // this.navCtrl.push(LoginPage)
+    this.app.getRootNav().push('LoginPage')
+    // this.navCtrl.push('LoginPage')
   }
 
   goCardBox(){
-    this.app.getRootNav().push(CardPackagePage);
+    this.app.getRootNav().push('CardPackagePage');
   }
 
   goMyTreat(){
-    this.app.getRootNav().push(MyTreatPage);
+    this.app.getRootNav().push('MyTreatPage');
   }
 
   activationCcard(){
-    // this.app.getRootNav().push(ActivationCardPage);
-    this.app.getRootNav().push(ActivationCardNologinPage);
+    // this.app.getRootNav().push('ActivationCardPage');
+    this.app.getRootNav().push('ActivationCardNologinPage');
   }
 
 }

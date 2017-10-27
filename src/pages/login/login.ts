@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController,ViewController, NavParams,App } from 'ionic-angular';
-
-import { PasswordLoginPage } from '../login/password-login/password-login';
+import { IonicPage,NavController,ViewController, NavParams,App } from 'ionic-angular';
 
 // declare var baidumap_location;
 /**
@@ -10,7 +8,7 @@ import { PasswordLoginPage } from '../login/password-login/password-login';
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-
+@IonicPage()
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
@@ -131,7 +129,7 @@ export class LoginPage {
 
   /*跳转密码登录页面*/
   goPasswordLoginPage(){
-    this.app.getRootNav().push(PasswordLoginPage);
+    this.app.getRootNav().push('PasswordLoginPage');
   }
 
 }

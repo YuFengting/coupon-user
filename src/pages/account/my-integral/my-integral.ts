@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ViewController,App } from 'ionic-angular';
 
-import { IntegralRulesPage } from '../my-integral/integral-rules/integral-rules';
-
 /**
  * Generated class for the MyIntegralPage page.
  *
@@ -50,7 +48,7 @@ export class MyIntegralPage {
   }
 
   goIntegralRules(){
-    this.app.getRootNav().push(IntegralRulesPage);
+    this.app.getRootNav().push('IntegralRulesPage');
   }
 
 }

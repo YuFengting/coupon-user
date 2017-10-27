@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,App } from 'ionic-angular';
 
-import { StoreDetailPage } from '../store/store-detail/store-detail';
-import { SelectCityPage } from '../store/select-city/select-city';
-
 /**
  * Generated class for the StorePage page.
  *
@@ -52,11 +49,11 @@ export class StorePage {
 
   goStoreDetail(index){
     console.log(index);
-    this.app.getRootNav().push(StoreDetailPage);
+    this.app.getRootNav().push('StoreDetailPage');
   }
 
   goSelectCity(){
-    this.app.getRootNav().push(SelectCityPage);
+    this.app.getRootNav().push('SelectCityPage');
   }
 
 }

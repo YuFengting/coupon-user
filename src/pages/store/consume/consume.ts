@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ViewController,App } from 'ionic-angular';
 
-import { PaySuccessPage } from '../../home/pay-success/pay-success';
-
 /**
  * Generated class for the ConsumePage page.
  *
@@ -25,8 +23,8 @@ export class ConsumePage {
   }
 
   goPaymentResult(){
-    // this.app.getRootNav().push(PaySuccessPage);
-    this.app.getRootNav().push(PaySuccessPage);
+    // this.app.getRootNav().push('PaySuccessPage');
+    this.app.getRootNav().push('PaySuccessPage');
   }
 
 }

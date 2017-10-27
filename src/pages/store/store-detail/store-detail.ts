@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams ,ViewController,App} from 'ionic-angular';
-
-import { ChargeCardPage } from '../../home/charge-card/charge-card';
-import { ConsumePage } from '../consume/consume';
-
 /**
  * Generated class for the StoreDetailPage page.
  *
@@ -26,11 +22,11 @@ export class StoreDetailPage {
   }
 
   goChargeCard(){
-    this.app.getRootNav().push(ChargeCardPage);
+    this.app.getRootNav().push('ChargeCardPage');
   }
 
   goConsume(){
-    this.app.getRootNav().push(ConsumePage);
+    this.app.getRootNav().push('ConsumePage');
   }
 
 }

@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ViewController,App } from 'ionic-angular';
 
-import { LoginPage } from '../../../../pages/login/login';
-
 /**
  * Generated class for the SetPasswordPage page.
  *
@@ -32,7 +30,7 @@ export class SetPasswordPage {
   }
 
   goLoginPage(){
-    this.app.getRootNav().push(LoginPage)
+    this.app.getRootNav().push('LoginPage')
     // this.navCtrl.push(LoginPage)
   }
 

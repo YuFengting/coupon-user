@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ViewController } from 'ionic-angular';
+import { IonicPage,NavController, NavParams, ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the UpdatePasswordPage page.
@@ -7,7 +7,7 @@ import { NavController, NavParams, ViewController } from 'ionic-angular';
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-
+@IonicPage()
 @Component({
   selector: 'page-update-password',
   templateUrl: 'update-password.html',

@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams,ViewController,App } from 'ionic-angular';
-
-import { UpdatePasswordPage } from '../../login/update-password/update-password';
+import { IonicPage,NavController, NavParams,ViewController,App } from 'ionic-angular';
 
 /**
  * Generated class for the PasswordLoginPage page.
@@ -9,7 +7,7 @@ import { UpdatePasswordPage } from '../../login/update-password/update-password'
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-
+@IonicPage()
 @Component({
   selector: 'page-password-login',
   templateUrl: 'password-login.html',
@@ -116,6 +114,6 @@ export class PasswordLoginPage {
   }
 
   updatePassword(){
-    this.app.getRootNav().push(UpdatePasswordPage);
+    this.app.getRootNav().push('UpdatePasswordPage');
   }
 }

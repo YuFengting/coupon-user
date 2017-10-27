@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ViewController,App } from 'ionic-angular';
 
-import { ChargeCardPage } from '../charge-card/charge-card';
-import { TransferCardPage } from '../transfer-card/transfer-card';
-import { StandTreatPage } from '../my-treat/stand-treat/stand-treat';
-
 /**
  * Generated class for the CardInforPage page.
  *
@@ -29,7 +25,7 @@ export class CardInforPage {
   }
 
   setMyTreat(){
-    this.app.getRootNav().push(StandTreatPage);
+    this.app.getRootNav().push('StandTreatPage');
     // if(this.setTreatFlag == '请  客'){
     //   this.setTreatFlag = '取消请客';
     // }else{
@@ -38,10 +34,10 @@ export class CardInforPage {
   }
 
   goChargCard(){
-    this.app.getRootNav().push(ChargeCardPage);
+    this.app.getRootNav().push('ChargeCardPage');
   }
 
   goTransferCard(){
-    this.app.getRootNav().push(TransferCardPage);
+    this.app.getRootNav().push('TransferCardPage');
   }
 }

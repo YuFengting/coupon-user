@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, App } from 'ionic-angular';
 
-import { CardInforPage } from '../card-infor/card-infor';
 /**
  * Generated class for the CardPackagePage page.
  *
@@ -53,7 +52,7 @@ export class CardPackagePage {
   }
 
   goCardInfor(){
-    this.app.getRootNav().push(CardInforPage);
+    this.app.getRootNav().push('CardInforPage');
   }
 
 }
